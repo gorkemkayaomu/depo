@@ -1,0 +1,27 @@
+puts
+puts "'ikinci dereceden bir denklemin kökünü alma' uygulamasına hoş geldiniz."
+puts
+puts "ax^2+bx+c denkelemindeki a, b ve c değerlerini sırasıyla giriniz."
+puts
+a, b, c = gets.chomp.to_f, gets.chomp.to_f, gets.chomp.to_f
+puts
+delta = (b ** 2 - 4 * a * c)
+puts delta
+puts
+if delta > 0 
+    puts "2 farklı reel kök bulunmaktadır"
+    puts
+    puts "bu kökler şunlardır:"
+    puts
+    puts ((-1) * b + Math.sqrt(delta)) / 2 * a
+    puts
+    puts ((-1) * b - Math.sqrt(delta)) / 2 * a
+elsif delta < 0
+    puts "reel kök bulunmamaktadır"
+else delta = 0
+    puts "çakışık 2 reel kök bulunmaktadır"
+    puts
+    puts "bu çakışık kök şudur:"
+    puts
+    puts ((-1) * b + Math.sqrt(delta)) / 2 * a 
+end
