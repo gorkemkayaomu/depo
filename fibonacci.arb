@@ -1,0 +1,12 @@
+n1, n2 = 0.to_i, 1.to_i
+n3 = n1 + n2
+puts
+puts "'fibonacci dizisinin istenilen sıradaki elemanını öğrenme' uygulamasına hoş geldiniz."
+puts
+puts 'kaçıncı elemanı öğrenmek istiyorsunuz?'
+x = gets.chomp.to_i
+x1 = x - 2
+(x1).times {n1 = n2
+n2 = n3
+n3 = n1 + n2}
+puts "#{x} numaralı eleman: #{n3}"
