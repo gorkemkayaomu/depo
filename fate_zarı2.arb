@@ -1,3 +1,4 @@
+n2 = 0
 4.times do
     n1 = rand(5)
     n1 = n1.to_s
@@ -23,5 +24,6 @@
            elsif n2 == "-"
             n2 = -1
            end
-           puts n2
+n2 += n1
 end
+puts n2
