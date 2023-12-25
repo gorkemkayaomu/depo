@@ -1,5 +1,5 @@
 4.times do
-    n1 = rand(5)
+    n1 = rand(6)
     n1 = n1.to_s
         if n1 == "0"
             puts "-"
