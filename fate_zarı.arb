@@ -1,0 +1,18 @@
+4.times do
+    n1 = rand(5)
+    n1 = n1.to_s
+        if n1 == "0"
+            puts "-"
+        elsif n1 == "1"
+            puts "-"
+        elsif n1 == "2"
+            puts "nil"
+        elsif n1 == "3"
+            puts "nil"
+        elsif n1 == "4" 
+            puts "+"
+        elsif n1 == "5"
+            puts "+"
+        else puts "hata"     
+        end
+end
