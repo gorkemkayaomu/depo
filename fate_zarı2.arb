@@ -1,29 +1,21 @@
 n2 = 0
 4.times do
-    n1 = rand(5)
+    n1 = rand(6)
     n1 = n1.to_s
         if n1 == "0"
-            puts "-"
+            n1 = -1
         elsif n1 == "1"
-            puts "-"
+            n1 = -1
         elsif n1 == "2"
-            puts "nil"
+            n1 = 0
         elsif n1 == "3"
-            puts "nil"
+            n1 = 0
         elsif n1 == "4" 
-            puts "+"
+            n1 = 1
         elsif n1 == "5"
-            puts "+"
+            n1 = 1
         else puts "hata"     
         end
-        for n2 in n1 do
-           if n2 == "+"
-            n2 = 1
-           elsif n2 == "nil"
-            n2 = 0
-           elsif n2 == "-"
-            n2 = -1
-           end
-n2 += n1
+    n2 += n1
 end
 puts n2
