@@ -1,0 +1,25 @@
+def name_the_name
+    a = []
+    d = 0
+    g = []
+    4.times do
+        b = rand(6) + 1
+        if b == 1
+            until b != 1
+                b = rand(6) + 1
+            end
+        else
+        end
+        a << b
+    end
+    a.sort!.reverse!
+    a.pop
+    a.each do |f|
+        d += f
+    end
+    d
+end
+h = []
+6.times {h << name_the_name}
+h.sort!.reverse!
+p h
